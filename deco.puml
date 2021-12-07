@@ -1,0 +1,98 @@
+@startuml
+abstract class dp.decorateur.Facture
+abstract class dp.strategy.Canard
+abstract class fr.epsi.mtp.b3C4.projet1.Animal
+annotation java.lang.Override
+class dp.decorateur.DecorateurFacture
+class dp.decorateur.Entete
+class dp.decorateur.FactureDetaille
+class dp.decorateur.FactureSimple
+class dp.decorateur.Main
+class dp.decorateur.Pub
+class dp.decorator.AdaptableDindon
+class dp.decorator.Dodo
+class dp.decorator.telephone.AdaptateurSamSaoule
+class dp.decorator.telephone.AdaptateurSonneErikSonne
+class dp.decorator.telephone.Chargeur
+class dp.decorator.telephone.Main
+class dp.decorator.telephone.PortableSamSaoule
+class dp.decorator.telephone.PortableSonneEricSonne
+class dp.decorator.telephone.TelCarouf
+class dp.strategy.CanardEnBois
+class dp.strategy.Colvert
+class dp.strategy.Main
+class dp.strategy.Morillon
+class dp.strategy.NoVol
+class dp.strategy.VolAvecAilles
+class fr.epsi.mtp.b3C4.projet1.Chien
+class fr.epsi.mtp.b3C4.projet1.Main
+class fr.epsi.mtp.b3C4.projet1.Oiseau
+class fr.epsi.mtp.b3C4.projet1.Personne
+class fr.epsi.mtp.b3C4.projet1.collection.Main
+class fr.epsi.mtp.b3C4.projet1.collection.Personne
+class java.awt.Color
+class java.util.ArrayList
+class java.util.Collections
+class java.util.Comparator
+class java.util.List
+class java.util.Objects
+class javac4.DemoStringConcat
+class javac4.JavaC4
+interface dp.decorator.Dindon
+interface dp.decorator.telephone.IChargeable
+interface dp.strategy.Vol
+interface java.lang.Comparable
+fr.epsi.mtp.b3C4.projet1.Animal ..> java.lang.Override
+fr.epsi.mtp.b3C4.projet1.Animal ..> java.awt.Color
+dp.decorateur.DecorateurFacture --|> dp.decorateur.Facture
+dp.decorateur.DecorateurFacture ..> java.lang.Override
+dp.decorateur.Entete ..> java.lang.Override
+dp.decorateur.Entete --|> dp.decorateur.DecorateurFacture
+dp.decorateur.FactureDetaille --|> dp.decorateur.Facture
+dp.decorateur.FactureDetaille ..> java.lang.Override
+dp.decorateur.FactureSimple --|> dp.decorateur.Facture
+dp.decorateur.FactureSimple ..> java.lang.Override
+dp.decorateur.Pub ..> java.lang.Override
+dp.decorateur.Pub --|> dp.decorateur.DecorateurFacture
+dp.decorator.AdaptableDindon --|> dp.strategy.Canard
+dp.decorator.AdaptableDindon ..> java.lang.Override
+dp.decorator.AdaptableDindon ..> dp.strategy.NoVol
+dp.decorator.AdaptableDindon ..> dp.strategy.Vol
+dp.decorator.Dodo ..> java.lang.Override
+dp.decorator.Dodo --|> dp.decorator.Dindon
+dp.decorator.telephone.AdaptateurSamSaoule ..> java.lang.Override
+dp.decorator.telephone.AdaptateurSamSaoule --|> dp.decorator.telephone.IChargeable
+dp.decorator.telephone.AdaptateurSonneErikSonne ..> java.lang.Override
+dp.decorator.telephone.AdaptateurSonneErikSonne --|> dp.decorator.telephone.IChargeable
+dp.decorator.telephone.TelCarouf ..> java.lang.Override
+dp.decorator.telephone.TelCarouf --|> dp.decorator.telephone.IChargeable
+dp.strategy.CanardEnBois --|> dp.strategy.Canard
+dp.strategy.CanardEnBois ..> java.lang.Override
+dp.strategy.Colvert --|> dp.strategy.Canard
+dp.strategy.Colvert ..> java.lang.Override
+dp.strategy.Main ..> dp.decorator.AdaptableDindon
+dp.strategy.Main ..> java.util.ArrayList
+dp.strategy.Main ..> java.util.List
+dp.strategy.Morillon --|> dp.strategy.Canard
+dp.strategy.Morillon ..> java.lang.Override
+dp.strategy.NoVol ..> java.lang.Override
+dp.strategy.NoVol --|> dp.strategy.Vol
+dp.strategy.VolAvecAilles ..> java.lang.Override
+dp.strategy.VolAvecAilles --|> dp.strategy.Vol
+fr.epsi.mtp.b3C4.projet1.Chien --|> fr.epsi.mtp.b3C4.projet1.Animal
+fr.epsi.mtp.b3C4.projet1.Chien ..> java.lang.Override
+fr.epsi.mtp.b3C4.projet1.Chien ..> java.awt.Color
+fr.epsi.mtp.b3C4.projet1.Main ..> java.awt.Color
+fr.epsi.mtp.b3C4.projet1.Oiseau --|> fr.epsi.mtp.b3C4.projet1.Animal
+fr.epsi.mtp.b3C4.projet1.Oiseau ..> java.lang.Override
+fr.epsi.mtp.b3C4.projet1.Personne ..> java.lang.Override
+fr.epsi.mtp.b3C4.projet1.Personne ..> java.util.Objects
+fr.epsi.mtp.b3C4.projet1.collection.Main ..> java.util.ArrayList
+fr.epsi.mtp.b3C4.projet1.collection.Main ..> java.util.Collections
+fr.epsi.mtp.b3C4.projet1.collection.Main ..> java.util.Comparator
+fr.epsi.mtp.b3C4.projet1.collection.Main ..> java.util.List
+fr.epsi.mtp.b3C4.projet1.collection.Personne ..> java.lang.Override
+fr.epsi.mtp.b3C4.projet1.collection.Personne ..> java.util.Objects
+fr.epsi.mtp.b3C4.projet1.collection.Personne --|> java.lang.Comparable
+javac4.JavaC4 ..> fr.epsi.mtp.b3C4.projet1.Personne
+@enduml
