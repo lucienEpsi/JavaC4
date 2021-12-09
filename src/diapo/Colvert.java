@@ -3,13 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dp.decorator;
+package diapo;
 
 /**
  *
  * @author 33676
  */
-public interface Dindon {
-    public void faitGlouGlou();
+public class Colvert implements EmissionSonore{
+
+    @Override
+    public void emetUnSon() {
+        System.out.println("Coin Coin");
+    }
     
 }

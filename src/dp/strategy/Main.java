@@ -5,7 +5,7 @@
  */
 package dp.strategy;
 
-import dp.decorator.AdaptableDindon;
+import dp.adaptator.AdaptableDindon;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dp.decorator;
+package dp.abstractfactory;
 
 /**
  *
  * @author 33676
  */
-public class Dodo implements Dindon{
+public class PneuSportX4 implements PneuSport {
 
-    @Override
-    public void faitGlouGlou() {
-        System.out.println("GlouGlou");
+    public PneuSportX4() {
     }
     
 }

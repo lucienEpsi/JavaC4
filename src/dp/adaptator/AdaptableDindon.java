@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dp.decorator;
+package dp.adaptator;
 
 import dp.strategy.Canard;
 import dp.strategy.NoVol;
